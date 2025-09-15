@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forever Friend? 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(to top left, #ffe0f0, #ffcad4);
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #d63384;
+    }
+    .btn {
+      padding: 12px 25px;
+      font-size: 18px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    #poll-response {
+      font-size: 24px;
+      color: #d63384;
+      margin-top: 20px;
+    }
+    #letter {
+      display: none;
+      margin-top: 40px;
+      font-size: 20px;
+      background: rgba(255,255,255,0.8);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 15px #ffc0cb;
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Will you be my friend forever? 🥹</h1>
+  <button class="btn" onclick="showResponse('Yes, forever! 💖')">Yes</button>
+  <button class="btn" onclick="showResponse('Always! 💫')">Always</button>
+
+  <div id="poll-response"></div>
+  <div id="letter">
+    <h2>💌 A Little Something for You, Palak</h2>
+    <p>Dear Palak,</p>
+    <p>
+      You’ve always been more than just a friend — you’re a blessing, a joy, a reason to smile.  
+      I made this small surprise just to let you know how much you mean to me. 💕
+    </p>
+    <p>
+      I don’t know what destiny holds, but I truly wish you're always a part
+<a href="index.html" class="btn" style="margin-top: 40px;">🔁 Back to Start</a>
+
+
+
+

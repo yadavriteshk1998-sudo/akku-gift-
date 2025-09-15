@@ -1,0 +1,109 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.page1 {
+  background-image: url('assets/bg-love1.jpg');
+}
+
+.content {
+  padding: 50px;
+  margin-top: 15%;
+}
+
+h1 {
+  font-size: 2em;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.next-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: #ff69b4;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #ff1493;
+}
+
+.sticker {
+  width: 100px;
+  margin-top: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+/* Page transition animation */
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
+}
+.balloon {
+  position: fixed;
+  bottom: -100px;
+  width: 40px;
+  height: 60px;
+  background-color: #ff69b4;
+  border-radius: 50% 50% 45% 45%;
+  animation: floatBalloon 10s linear infinite;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background: #aaa;
+}
+
+@keyframes floatBalloon {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-120vh) rotate(360deg); }
+}
+
+.balloon1 { left: 10%; animation-delay: 0s; }
+.balloon2 { left: 30%; animation-delay: 2s; background: #87cefa; }
+.balloon3 { left: 50%; animation-delay: 4s; background: #ff6347; }
+.balloon4 { left: 70%; animation-delay: 6s; background: #32cd32; }
+.balloon5 { left: 90%; animation-delay: 8s; background: #ffa500; }
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: #ff1493;
+}
+
+

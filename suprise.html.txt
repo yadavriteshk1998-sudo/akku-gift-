@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surprise Letter for You 💌</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(#ffdde1, #ee9ca7);
+      color: #222;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+    }
+    #countdown {
+      font-size: 40px;
+      margin-top: 40px;
+      font-weight: bold;
+      color: #ff1493;
+    }
+    #letter {
+      display: none;
+      font-size: 24px;
+      margin-top: 50px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 2s ease-in-out forwards;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #fff0f5;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #ff1493;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎁 A Little Surprise Awaits...</h1>
+  <p>Wait for it, it's special 💖</p>
+  <div id="countdown">10</div>
+
+  <div id="letter">
+    <p>Dear Palak,</p>
+    <p>
+      You're not just special, you're a whole universe of happiness.  
+      Sometimes words fall short to explain how much your smile means to me.  
+      I made this little world to see you smile – and if you are, my mission is complete 💫
+    </p>
+    <p>
+      I don’t know what the future holds, but I truly wish you’re in it.  
+      You're not just my best friend — you're a blessing in disguise 🌸
+    </p>
+    <p>Yours, from the heart ❤️</p>
+    <button class="btn" onclick="window.location.href='index.html'">Back to Start</button>
+  </div>
+
+  <!-- 🎈 Balloons -->
+  <div class="balloon balloon1"></div>
+  <div class="balloon balloon2"></div>
+  <div class="balloon balloon3"></div>
+  <div class="balloon balloon4"></div>
+  <div class="balloon balloon5"></div>
+
+  <!-- Effects -->
+  <script src="effects.js"></script>
+
+  <!-- Countdown Script -->
+  <script>
+    let timeLeft = 10;
+    const countdownEl = document.getElementById("countdown");
+    const letterEl = document.getElementById("letter");
+
+    const timer = setInterval(() => {
+      timeLeft--;
+      countdownEl.textContent = timeLeft;
+
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        countdownEl.style.display = 'none';
+        letterEl.style.display = 'block';
+        window.triggerFireworks(); // 🎆 celebrate!
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>

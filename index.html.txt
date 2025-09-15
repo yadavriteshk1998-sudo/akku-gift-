@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Palak ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page page1">
+  <div class="content">
+    <h1>Palak, tum ho meri zindagi ki sabse khoobsurat feeling 💖</h1>
+    <img src="assets/cute-sticker1.png" alt="cute sticker" class="sticker" />
+    <a href="page2.html" class="next-btn">Next ➜</a>
+  </div>
+</body>
+</html>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
+<a href="page2.html" class="btn" style="margin-top: 40px;">Next ➡️</a>

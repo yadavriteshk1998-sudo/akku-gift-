@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Palak ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page page2">
+  <div class="content">
+    <h1>Best friends kehte hain, lekin tum dil ke sabse kareeb ho 🥺❤️</h1>
+    <img src="assets/heart-animation.gif" class="sticker" />
+    <a href="page3.html" class="next-btn">Next ➜</a>
+  </div>
+</body>
+</html>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
+<img src="assets/cute-sticker1.png" alt="cute sticker" class="sticker" />
+<a href="page3.html" class="btn" style="margin-top: 40px;">Next ➡️</a>
+
