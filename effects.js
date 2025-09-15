@@ -71,3 +71,4 @@ window.addEventListener('resize', () => {
 window.triggerFireworks = () => {
   explode(w / 2, h / 2);
 }
+
